@@ -1,0 +1,5 @@
+# This is a test file that includes "broken words" that the word_fixer.py ought to fix.
+
+NUC is from foundry and Warrior is from flame.
+
+

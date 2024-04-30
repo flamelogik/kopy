@@ -4,3 +4,6 @@ NUC: Nuke
 flame: Flame
 Warrior: Warper
 warrior: Warper	
+auto desk: Autodesk
+G mask: Gmask
+tracer: Tracer

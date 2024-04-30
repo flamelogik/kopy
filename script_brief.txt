@@ -1,0 +1,44 @@
+
+
+I need help creating a python script that does the following:
+
+1.  Asks for a name of the Video Transcript, to assist in the summaries below and to include in the output filenames.
+2.  Asks for the Instructor Name, so that the summaries below can refer to her/him by name.
+3.  Asks for video transcript, which will be provided as a VTT file.
+4.  Once the video transcript has been entered, I want it to perform a search and replace function for "broken words", which are words that Adobe auto subtitling get wrong all the time with out complex technical language.  See the confgurations.txt for a format and examples.  It looks like this...
+
+word_to_find_1: replacement_word_1
+word_to_find_2: replacement_word_2
+
+5.  I then want the script to save the result file as <name of the video transcript>(eng).vtt
+
+6.  I then want the script to ask Chat GPT to output a txt file called <name of the video transcript>_kopy.txt, with the following three actions performed:
+
+A.  Provide a 5-7 sentence summary of the video transcript.
+B.  Provide a 140 character short summary of the video transcript.
+C.  Provide a 170 character summary optimized for keywords and SEO.
+
+7.  I then want Chat GPT to include in that text file an email with the following format:
+
+Subject:  🔥<name of the video transcript> is out!🔥
+Body:
+
+Yo {{username}}!  
+{{content.title}} just dropped on {{store.title}}.  <Insert the 5-7 sentence summary from above>. 
+
+Sign it: 
+Enjoy!  
+Randy McEntee
+Logik Academy Pro
+
+The Yo "{{username}}!  
+{{content.title}} just dropped on {{store.title}}" is from the Uscreen website and I want you to include that raw data as is.
+ 
+
+IMPORTANT!
+{{username}}
+{{content.title}}
+{{store.title}}
+
+These are variables that are present in the Uscreen platform.  Meaning, I want the resulting email to use these and keep these unchanged so that Uscreen can insert its own data.
+
