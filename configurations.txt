@@ -1,0 +1,6 @@
+word_to_find_1: replacement_word_1
+word_to_find_2: replacement_word_2
+NUC: Nuke
+flame: Flame
+Warrior: Warper
+warrior: Warper	
