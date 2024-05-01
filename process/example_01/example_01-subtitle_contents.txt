@@ -1,0 +1,321 @@
+WEBVTT Hey, and welcome back to Logik Academy Pro and Flame
+for Nuke Artists.
+So as I promised in the last class, this time we're going
+to finally delve into the image and bring all those pieces together.
+So everything you learned about the G mask trace,
+but also about the diamond keyer.
+And of course, the mask right from last class will now be put together.
+So without much further ado, let's dive into batch.
+So let's pull out an image node from the effects nodes.
+Bend and connect it up to our footage.
+And from the looks of it.
+This doesn't look too different from any other general node
+you can pull from the effects nodes been.
+But as you remember, probably from the introduction of action way back
+when I called this one of the three human nodes inside of Flame.
+So let's dissect this one by one.
+If we had a four and open up the tool.
+This almost looks like the master grade from the last class.
+And this is to be expected because the mask,
+the grade is now applied not as a node, but as a shader
+inside of this image toolset.
+How does this make any sense?
+Well, let's pull back a bit.
+Image is based on the action toolset.
+Now action is the 3D compositing environment of Flame,
+where you can also apply shaders and the mask,
+the grade being, a matchbox shader being one of them.
+So for everything you see from now on,
+always try to keep in your mind this is just action
+with a little bit of different controls to suit this.
+For grading tasks,
+the first
+thing I want to draw your attention to is the HUD up here.
+So by default you always get a primary color
+correction, a first selective to build on.
+But there much more I think you can apply up to 48
+selective color corrections inside the single node.
+And then you've got a general kind
+of post-processing output selection there as well.
+So these three primary selective one and output
+are the first ones to work on.
+So if we want to give this a primary grade, we can do that.
+So just select the primary
+and do your color correction.
+So this is lock material.
+Let's switch our controls to lock
+and then we can give this a very basic
+first grade.
+So maybe something like that.
+So this
+is not too different from what we did in the last class.
+And if you familiarize yourself with the controls there,
+then this shouldn't be too difficult.
+However, now we want to apply selectively.
+So to do that, just click the selective
+one in the hut and you'll see our interface change.
+Now you are in what you call the Selective Controls panel.
+And by the way, this is where you can see the numbers of selective
+that are available to you so you can jump through those.
+And there are those 48 selectors I talked about.
+I got my first selective selected, but I haven't told Flame
+yet how I actually want to do the separation.
+How do I want to make a selective to then color correct on.
+We've got a couple of tools that we can use
+to actually achieve this selection or separation.
+Let's start by something
+really, really simple, and that would be a G mask.
+So with selective one selected right
+click in the center of your image and choose
+at the mask link.
+And I'm going to go with an ellipse just to do a basic vignette
+on our very first selection.
+So by clicking
+that and pulling that up, you're drawing up
+exactly the same shape as you would in the
+G mask tracer if you choose the G mask ellipse there
+and using the same shortcut.
+A you can also add a gradient point like that.
+So that is our selectivity find.
+The only thing we should probably do is inverted
+because we probably want to,
+bring down the,
+the highlights in the outer rim area instead of the inner circle.
+So I'm going to hit invert and then
+how do I get to my actual grading controls?
+Well, there are two possibilities for that.
+The first one is automatically
+Flame will put a master grade
+to each and every selective that you define.
+You can change that.
+You can apply differentiators as well as mask.
+The grade is just one of many matchbox shaders,
+but by default it'll always apply a mask that great.
+And for now this is what we're going to keep using.
+So you just change to that tap.
+And there we are back in our familiar controls.
+And if I now bring down the lift,
+I can bring down the brightness there
+and thereby apply my vignette.
+So if I go to my source image,
+I see the completely uncorrected raw footage.
+If I had a four, I see the result.
+And with selective one selected hitting H
+I can just hide this selective like so.
+So I see it with or without my vignette.
+The second option you've got
+to switch between your selective and your actual mask.
+The great is to use the single dropdown
+menu here and change that to double.
+So that way you will have your selective
+on the left hand side of the panel
+and a somewhat reduced version of the mask.
+Look right on the right hand side, not in functionality.
+It's all there.
+So you've got your curves, you've got your tones,
+you've got your primaries, but you're going to go
+without the prime tone combined panel
+and you'll have to do much more switching between menus.
+So this is a little bit of a
+drawback of this, but it is there
+if you want to constantly switch
+between refining your selective
+and adjusting your grade, that might be an option.
+There is actually a third way to switch
+between the selective and the grade And actually
+every component of your grade, and that is by using the schematic.
+Now, this is something that you're most likely
+not see in a lot of official
+Autodesk documentation and also training material.
+And that is because the image toolset
+is also designed
+to be driven by a controlled surface,
+like a tangent wave or element or something like that.
+And a schematic is something that is pretty inherent
+to be driven by a pen and tablet and not by a huge control surface.
+So I'll try to stick
+to the usage of image as it is intended,
+just to show you a different way on how to deal with this.
+But, honestly,
+I tend to go to the schematic quite a lot because I use it
+for the G mask tracer.
+I use it for action and I am familiar with it.
+So if you hit the tilde key,
+you can see our relationship diagram
+build up like we would have done it in action ourselves.
+But this is all built under the hood.
+So this is why I'm showing this to you. Now.
+I want you to see that even though you're
+using different methods, this is just action under the hood.
+So you've got a surface,
+you apply shaders to the surface and you've got maps
+driving those selections.
+So from now on, you'll constantly
+see me going back to the schematic
+just to illustrate, to show you what is happening under the hood.
+Also, this is a great failsafe mechanism.
+If you get lost or if you play around with this and
+you accidentally created something you don't want to
+and you don't know how to delete it or how to disable it,
+you can always go back to your knowledge of action
+and just use those techniques so you can cut connections
+like you're used to from your action schematic.
+You can reconnect, you can hide elements and so on and so on.
+I think you get the idea.
+Let's continue by adding another selective and color.
+Correct her face a bit more.
+So going to the selective controls menu,
+which is here.
+I can now choose to add a second selective like that.
+And like before that is fresh.
+There's not yet any method defined on how we want to
+actually separate our image
+or parts of our image from the rest.
+Okay.
+So for this, I would like to use the diamond here.
+So I'm going to go to the keyers And one thing I wanted to show you,
+because this is something I constantly do Nuke,
+and that is to view the individual channels.
+So to do that, you're going to use almost exactly
+the same hotkeys as inside of Nuke, which is.
+RG and B for each individual channel inside a Flame,
+you just have to use shift R for the red channel,
+Shift G for the Green channel
+and shift B for the blue channel.
+So as you might have already expected from the plane, IGP view,
+the Blue channel is our best
+bet to get a proper matte extracted
+or the blue range of the image.
+So how do we deal with that?
+Well, making sure my,
+selective too is selected.
+I'm actually going to activate the diamond here.
+This little guy here that you already know
+from the color pop like so.
+So now I can go about this exactly the same way as I would
+in the color warper.
+I could select a preset like Cyan,
+but I don't see anything.
+how can I actually see my matte?
+Well, for that I have to hit F8 and see
+my selective matte view,
+and that can then be refined from here.
+What I can also do
+if I hit F8 twice is actually get an overlay
+of that matte onto my image, which might make things a little bit
+easier.
+So let's see if we can find that
+a little bit more.
+Could also try to pick our custom color.
+But I think
+the selection we had actually wasn't too bad.
+If we go back to F14
+and then F8 for the overlay, we catch quite a lot of that.
+There are two more things I want to do.
+I want to soften this up a little bit and then I want to constrain it
+by an additional T mask.
+So let's start by blurring this,
+something like that, and then I want to apply it.
+You must do this as well.
+So going back to my result view,
+I can either click in the image, I can also click on my heart
+here, right click and add a mask link
+with link, meaning that the t mask
+will automatically be linked to that.
+And I just picked so now I'm going to go with free
+instead of Ellipse and that allows me to draw a G mask
+like I would in the G mask tracer So I'm going to go with this now.
+Something like that, kill that,
+point up there, something like that.
+So let's get back to F eight to see if our Matt works
+and we'll see not what we expect.
+So if we sat through this, you see the flat image,
+but we don't see
+our overlay combined with our diamond keyer.
+Why is that?
+Well, if we head back to the result view and take a look at the HUD,
+you see that our correct selective is selected.
+That is the selective to Diamond, but also our G mask is selected.
+So we just got the view of the G mask and of itself in the viewer.
+If we want to see the result
+of the diamond keyer and the G mask to combined,
+we need to select the selective itself
+and then head over to the F8 view.
+And there we get what we expect.
+So now we can refine this a bit more.
+Let's bring this over here.
+Let's also add a gradient point
+to further this up, something like that.
+And then of course, if we shuttled through this clip,
+we see we need to animate that matter.
+We can do that manually or like with any other G mask
+in action or the G mass tracer, we can, of course, check that.
+So let's try that.
+And I'm actually choosing to track the axis
+so I could go to the schematic and choose it there.
+I can also pick the tab up here
+and select rotation and scale
+to have two points and enter the tracker.
+And then I'm just going to do
+a quick track on her eyes
+like, So
+let's see if that sticks.
+Something like that
+just hit the adjust offset to bring it back into place.
+And now
+yeah, we could probably smoothen
+out the scale and rotation in the channel.
+Editor Let's quickly do that.
+So going in over here,
+just selecting access to rotation and scaling,
+holding down shift to select both the rotation and the scaling,
+and then with average selected here,
+I'm going to smoothen those out.
+So as a constrain matte, that should work for grading.
+Okay, great.
+So with that
+we can finally get back to color correct this.
+So going to the result View
+Diamond two is selected.
+I'm going to go to Master grade two.
+It's really helpful that image names these all accordingly.
+So G Mask two, access to master grade to
+are all tied to selective two.
+So of course at one point that might break,
+but as much as possible image will try to keep those numbers
+sensible so
+to indicate which belongs to which.
+And once again, if you falter, if you're not sure which axis which
+you mask you are actually working
+on, always go back to the schematic.
+I think this is something that as a new artist
+you'll probably understand.
+And the easiest.
+All right, master grade to select it.
+And now we can adjust this skin tone.
+So maybe you will try to bring it a little bit
+more in on the lively side, something like that.
+Lets hide that for a minute.
+Yeah, I think this isn't too bad.
+So the last thing I want to show you in
+this class is how to properly label your individual selector.
+So that's pretty easy.
+Just by right clicking in here, we can rename this
+vignette
+like so.
+So now this is properly labeled
+and if we go to the second one,
+you could also use the object window down here.
+So if you don't want to call this diamond, which just refers to the key
+instead of the actual object in the image,
+you could call this face
+like so.
+Okay, so I'm going to close this
+class out now, and in the next class we're going to continue
+our exploration of the image tool, said.
+And then we'll also take a look at some other means
+on how to separate your image.
+So we'll take a look at the machine learning inside of Flame
+and also 3D areas, which could be pretty exciting.
+So thank you so much for watching.
+Until next time. Bye bye.

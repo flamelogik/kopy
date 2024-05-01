@@ -1,7 +1,7 @@
 # --------------------------------------------------------------------------- #
 
 # filename:    'logik-kopy_pro.py'
-# version:      4.0.0
+# version:      4.0.1
 
 # --------------------------------------------------------------------------- #
 
@@ -100,7 +100,7 @@ def generate_and_write_summaries(vtt_filename, subtitle_contents, process_subdir
 def generate_summary(text, max_tokens):
     try:
         response = openai.Completion.create(
-            model="text-davinci-003",  # Adjust model as necessary
+            model="gpt-3.5-turbo-instruct",  # Adjust model as necessary
             prompt=f"Summarize the text in a detailed paragraph (5-7 sentences):\n{text}",
             max_tokens=max_tokens
         )
