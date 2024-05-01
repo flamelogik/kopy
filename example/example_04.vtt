@@ -1,0 +1,1138 @@
+WEBVTT
+
+00:00:03.166 --> 00:00:05.733
+Hey, and welcome back to Logik
+Academy Pro and Flame
+
+00:00:05.733 --> 00:00:06.900
+for Nuke Artists.
+
+00:00:06.900 --> 00:00:10.333
+So as I promised in the last class,
+this time we're going
+
+00:00:10.333 --> 00:00:14.833
+to finally delve into the image
+and bring all those pieces together.
+
+00:00:14.833 --> 00:00:17.466
+So everything you learned about
+the G mask trace,
+
+00:00:17.633 --> 00:00:19.500
+but also about the diamond keyer.
+
+00:00:19.500 --> 00:00:23.533
+And of course, the mask right from
+last class will now be put together.
+
+00:00:23.633 --> 00:00:26.666
+So without much further ado,
+let's dive into batch.
+
+00:00:26.733 --> 00:00:29.200
+So let's pull out an image node
+from the effects nodes.
+
+00:00:29.200 --> 00:00:31.433
+Bend and connect it
+up to our footage.
+
+00:00:31.433 --> 00:00:32.600
+And from the looks of it.
+
+00:00:32.600 --> 00:00:36.033
+This doesn't look too different
+from any other general node
+
+00:00:36.033 --> 00:00:38.266
+you can pull from the effects
+nodes been.
+
+00:00:38.266 --> 00:00:42.366
+But as you remember, probably from
+the introduction of action way back
+
+00:00:42.366 --> 00:00:46.666
+when I called this one of the three
+human nodes inside of Flame.
+
+00:00:46.800 --> 00:00:48.966
+So let's dissect this one by one.
+
+00:00:48.966 --> 00:00:52.000
+If we had a four and open up
+the tool.
+
+00:00:52.066 --> 00:00:55.433
+This almost looks like
+the master grade from the last class.
+
+00:00:55.433 --> 00:00:59.566
+And this is to be expected
+because the mask,
+
+00:00:59.566 --> 00:01:04.000
+the grade is now applied
+not as a node, but as a shader
+
+00:01:04.100 --> 00:01:07.033
+inside of this image toolset.
+
+00:01:07.066 --> 00:01:09.100
+How does this make any sense?
+
+00:01:09.100 --> 00:01:11.033
+Well, let's pull back a bit.
+
+00:01:11.033 --> 00:01:14.100
+Image is based on the action toolset.
+
+00:01:14.133 --> 00:01:18.133
+Now action is the 3D compositing
+environment of Flame,
+
+00:01:18.233 --> 00:01:22.200
+where you can also apply shaders
+and the mask,
+
+00:01:22.200 --> 00:01:26.000
+the grade being, a matchbox shader
+being one of them.
+
+00:01:26.100 --> 00:01:29.200
+So for everything you see from
+now on,
+
+00:01:29.266 --> 00:01:33.033
+always try to keep in your mind
+this is just action
+
+00:01:33.100 --> 00:01:36.800
+with a little bit
+of different controls to suit this.
+
+00:01:36.866 --> 00:01:39.066
+For grading tasks,
+
+00:01:39.133 --> 00:01:39.666
+the first
+
+00:01:39.666 --> 00:01:42.966
+thing I want to draw
+your attention to is the HUD up here.
+
+00:01:42.966 --> 00:01:47.166
+So by default
+you always get a primary color
+
+00:01:47.166 --> 00:01:51.033
+correction,
+a first selective to build on.
+
+00:01:51.033 --> 00:01:54.100
+But there much more
+I think you can apply up to 48
+
+00:01:54.100 --> 00:01:57.633
+selective color corrections
+inside the single node.
+
+00:01:57.700 --> 00:02:00.333
+And then you've got a general kind
+
+00:02:00.333 --> 00:02:04.066
+of post-processing output selection
+there as well.
+
+00:02:04.166 --> 00:02:08.333
+So these three primary selective
+one and output
+
+00:02:08.400 --> 00:02:11.233
+are the first ones to work on.
+
+00:02:11.333 --> 00:02:14.833
+So if we want to give this
+a primary grade, we can do that.
+
+00:02:14.933 --> 00:02:18.300
+So just select the primary
+
+00:02:18.366 --> 00:02:20.600
+and do your color correction.
+
+00:02:20.600 --> 00:02:22.600
+So this is lock material.
+
+00:02:22.600 --> 00:02:25.266
+Let's switch our controls to lock
+
+00:02:25.333 --> 00:02:30.266
+and then we can give this
+a very basic
+
+00:02:30.333 --> 00:02:33.200
+first grade.
+
+00:02:33.300 --> 00:02:41.666
+So maybe something like that.
+
+00:02:41.733 --> 00:02:42.166
+So this
+
+00:02:42.166 --> 00:02:44.633
+is not too different from what we did
+in the last class.
+
+00:02:44.633 --> 00:02:48.433
+And if you familiarize yourself
+with the controls there,
+
+00:02:48.533 --> 00:02:50.400
+then this shouldn't be too difficult.
+
+00:02:50.400 --> 00:02:53.800
+However, now
+we want to apply selectively.
+
+00:02:53.866 --> 00:02:56.733
+So to do that,
+just click the selective
+
+00:02:56.733 --> 00:03:00.400
+one in the hut
+and you'll see our interface change.
+
+00:03:00.466 --> 00:03:04.266
+Now you are in what you call
+the Selective Controls panel.
+
+00:03:04.266 --> 00:03:08.100
+And by the way, this is where
+you can see the numbers of selective
+
+00:03:08.166 --> 00:03:11.800
+that are available to you
+so you can jump through those.
+
+00:03:11.866 --> 00:03:15.900
+And there are those 48 selectors
+I talked about.
+
+00:03:16.166 --> 00:03:20.533
+I got my first selective selected,
+but I haven't told Flame
+
+00:03:20.633 --> 00:03:24.733
+yet how
+I actually want to do the separation.
+
+00:03:24.733 --> 00:03:28.800
+How do I want to make a selective to
+then color correct on.
+
+00:03:28.866 --> 00:03:32.200
+We've got a couple of tools
+that we can use
+
+00:03:32.433 --> 00:03:35.800
+to actually achieve
+this selection or separation.
+
+00:03:35.866 --> 00:03:38.200
+Let's start by something
+
+00:03:38.200 --> 00:03:41.633
+really, really simple,
+and that would be a G mask.
+
+00:03:41.666 --> 00:03:44.133
+So with selective one selected right
+
+00:03:44.133 --> 00:03:49.000
+click in the center
+of your image and choose
+
+00:03:49.100 --> 00:03:50.600
+at the mask link.
+
+00:03:50.600 --> 00:03:53.800
+And I'm going to go with an ellipse
+just to do a basic vignette
+
+00:03:54.033 --> 00:03:57.133
+on our very first selection.
+
+00:03:57.233 --> 00:03:58.500
+So by clicking
+
+00:03:58.500 --> 00:04:02.066
+that and pulling that up,
+you're drawing up
+
+00:04:02.066 --> 00:04:04.733
+exactly the same shape as you would
+in the
+
+00:04:04.800 --> 00:04:08.800
+G mask tracer if you choose the
+G mask ellipse there
+
+00:04:08.866 --> 00:04:11.100
+and using the same shortcut.
+
+00:04:11.100 --> 00:04:15.600
+A you can also add
+a gradient point like that.
+
+00:04:15.666 --> 00:04:17.633
+So that is our selectivity find.
+
+00:04:17.633 --> 00:04:20.366
+The only thing we should
+probably do is inverted
+
+00:04:20.366 --> 00:04:23.833
+because we probably want to,
+
+00:04:23.933 --> 00:04:25.166
+bring down the,
+
+00:04:25.166 --> 00:04:29.866
+the highlights in the outer rim area
+instead of the inner circle.
+
+00:04:29.866 --> 00:04:32.266
+So I'm going to hit invert and then
+
+00:04:32.466 --> 00:04:36.033
+how do I get to my actual
+grading controls?
+
+00:04:36.033 --> 00:04:38.900
+Well,
+there are two possibilities for that.
+
+00:04:39.000 --> 00:04:41.233
+The first one is automatically
+
+00:04:41.233 --> 00:04:43.633
+Flame will put a master grade
+
+00:04:43.700 --> 00:04:46.966
+to each
+and every selective that you define.
+
+00:04:47.066 --> 00:04:48.166
+You can change that.
+
+00:04:48.166 --> 00:04:50.866
+You can apply differentiators
+as well as mask.
+
+00:04:50.866 --> 00:04:53.466
+The grade is
+just one of many matchbox shaders,
+
+00:04:53.533 --> 00:04:56.700
+but by default
+it'll always apply a mask that great.
+
+00:04:56.700 --> 00:04:59.600
+And for now this is what
+we're going to keep using.
+
+00:04:59.700 --> 00:05:01.966
+So you just change to that tap.
+
+00:05:01.966 --> 00:05:05.366
+And there
+we are back in our familiar controls.
+
+00:05:05.433 --> 00:05:09.866
+And if I now bring down the lift,
+
+00:05:09.933 --> 00:05:14.133
+I can bring down the brightness there
+
+00:05:14.200 --> 00:05:17.266
+and thereby apply my vignette.
+
+00:05:17.366 --> 00:05:19.766
+So if I go to my source image,
+
+00:05:19.966 --> 00:05:24.366
+I see the completely uncorrected
+raw footage.
+
+00:05:24.366 --> 00:05:26.733
+If I had a four, I see the result.
+
+00:05:26.733 --> 00:05:30.066
+And with selective one selected
+hitting H
+
+00:05:30.266 --> 00:05:34.733
+I can just hide this
+selective like so.
+
+00:05:34.733 --> 00:05:38.766
+So I see it
+with or without my vignette.
+
+00:05:38.833 --> 00:05:40.800
+The second option you've got
+
+00:05:40.800 --> 00:05:44.400
+to switch between your selective
+and your actual mask.
+
+00:05:44.400 --> 00:05:47.100
+The great is to use
+the single dropdown
+
+00:05:47.100 --> 00:05:49.866
+menu here and change that to double.
+
+00:05:49.933 --> 00:05:53.566
+So that way
+you will have your selective
+
+00:05:53.666 --> 00:05:56.966
+on the left hand side of the panel
+
+00:05:57.033 --> 00:05:59.300
+and a somewhat reduced
+version of the mask.
+
+00:05:59.300 --> 00:06:02.300
+Look right on the right hand side,
+not in functionality.
+
+00:06:02.300 --> 00:06:03.000
+It's all there.
+
+00:06:03.000 --> 00:06:06.733
+So you've got your curves,
+you've got your tones,
+
+00:06:06.733 --> 00:06:09.900
+you've got your primaries,
+but you're going to go
+
+00:06:09.900 --> 00:06:13.666
+without the prime tone combined panel
+
+00:06:13.666 --> 00:06:17.233
+and you'll have to do much
+more switching between menus.
+
+00:06:17.233 --> 00:06:19.633
+So this is a little bit of a
+
+00:06:19.833 --> 00:06:22.266
+drawback of this, but it is there
+
+00:06:22.266 --> 00:06:24.666
+if you want to constantly switch
+
+00:06:24.666 --> 00:06:27.500
+between refining your selective
+
+00:06:27.500 --> 00:06:31.366
+and adjusting your grade,
+that might be an option.
+
+00:06:31.466 --> 00:06:33.500
+There
+is actually a third way to switch
+
+00:06:33.500 --> 00:06:37.100
+between the selective and the grade
+And actually
+
+00:06:37.200 --> 00:06:41.766
+every component of your grade,
+and that is by using the schematic.
+
+00:06:41.833 --> 00:06:44.700
+Now, this is something that you're
+most likely
+
+00:06:44.700 --> 00:06:48.866
+not see in a lot of official
+
+00:06:48.933 --> 00:06:52.500
+Autodesk documentation
+and also training material.
+
+00:06:52.733 --> 00:06:55.800
+And that is because the image toolset
+
+00:06:55.866 --> 00:06:58.366
+is also designed
+
+00:06:58.366 --> 00:07:00.766
+to be driven by a controlled surface,
+
+00:07:00.766 --> 00:07:04.800
+like a tangent wave or element
+or something like that.
+
+00:07:04.866 --> 00:07:09.000
+And a schematic
+is something that is pretty inherent
+
+00:07:09.000 --> 00:07:13.466
+to be driven by a pen and tablet
+and not by a huge control surface.
+
+00:07:13.533 --> 00:07:15.966
+So I'll try to stick
+
+00:07:15.966 --> 00:07:20.266
+to the usage of image
+as it is intended,
+
+00:07:20.266 --> 00:07:23.800
+just to show you a different way
+on how to deal with this.
+
+00:07:23.866 --> 00:07:26.100
+But, honestly,
+
+00:07:26.100 --> 00:07:30.000
+I tend to go to the schematic
+quite a lot because I use it
+
+00:07:30.000 --> 00:07:30.966
+for the G mask tracer.
+
+00:07:30.966 --> 00:07:35.000
+I use it for action
+and I am familiar with it.
+
+00:07:35.100 --> 00:07:37.266
+So if you hit the tilde key,
+
+00:07:37.266 --> 00:07:39.900
+you can see our relationship diagram
+
+00:07:39.900 --> 00:07:42.933
+build up like we would have done it
+in action ourselves.
+
+00:07:42.933 --> 00:07:45.333
+But this is all built under the hood.
+
+00:07:45.566 --> 00:07:48.466
+So this is why I'm
+showing this to you. Now.
+
+00:07:48.700 --> 00:07:51.433
+I want you to see that
+even though you're
+
+00:07:51.466 --> 00:07:56.066
+using different methods,
+this is just action under the hood.
+
+00:07:56.100 --> 00:07:58.500
+So you've got a surface,
+
+00:07:58.500 --> 00:08:02.033
+you apply shaders to the surface
+and you've got maps
+
+00:08:02.200 --> 00:08:04.600
+driving those selections.
+
+00:08:04.733 --> 00:08:07.733
+So from now on, you'll constantly
+
+00:08:07.800 --> 00:08:10.200
+see me going back to the schematic
+
+00:08:10.400 --> 00:08:14.266
+just to illustrate, to show you
+what is happening under the hood.
+
+00:08:14.366 --> 00:08:18.100
+Also,
+this is a great failsafe mechanism.
+
+00:08:18.100 --> 00:08:20.633
+If you get lost
+or if you play around with this and
+
+00:08:20.633 --> 00:08:23.500
+you accidentally created
+something you don't want to
+
+00:08:23.733 --> 00:08:26.733
+and you don't know how to delete it
+or how to disable it,
+
+00:08:26.800 --> 00:08:29.933
+you can always go back
+to your knowledge of action
+
+00:08:30.000 --> 00:08:34.500
+and just use those techniques
+so you can cut connections
+
+00:08:34.500 --> 00:08:38.266
+like you're used to
+from your action schematic.
+
+00:08:38.366 --> 00:08:42.500
+You can reconnect, you can hide
+elements and so on and so on.
+
+00:08:42.500 --> 00:08:44.133
+I think you get the idea.
+
+00:08:44.133 --> 00:08:47.966
+Let's continue by adding
+another selective and color.
+
+00:08:47.966 --> 00:08:49.533
+Correct her face a bit more.
+
+00:08:49.533 --> 00:08:54.200
+So going to the selective controls
+menu,
+
+00:08:54.266 --> 00:08:56.466
+which is here.
+
+00:08:56.466 --> 00:09:00.866
+I can now choose to add a second
+selective like that.
+
+00:09:00.933 --> 00:09:03.900
+And like before that is fresh.
+
+00:09:03.900 --> 00:09:08.200
+There's not yet
+any method defined on how we want to
+
+00:09:08.266 --> 00:09:10.666
+actually separate our image
+
+00:09:10.766 --> 00:09:13.700
+or parts of our image from the rest.
+
+00:09:13.766 --> 00:09:14.633
+Okay.
+
+00:09:14.633 --> 00:09:18.433
+So for this,
+I would like to use the diamond here.
+
+00:09:18.533 --> 00:09:23.166
+So I'm going to go to the keyers
+And one thing I wanted to show you,
+
+00:09:23.166 --> 00:09:26.133
+because this is something
+I constantly do Nuke,
+
+00:09:26.200 --> 00:09:28.866
+and that is to view
+the individual channels.
+
+00:09:28.866 --> 00:09:32.266
+So to do that,
+you're going to use almost exactly
+
+00:09:32.266 --> 00:09:35.000
+the same hotkeys as inside of Nuke,
+which is.
+
+00:09:35.233 --> 00:09:38.800
+RG and B for each individual channel
+inside a Flame,
+
+00:09:39.000 --> 00:09:42.933
+you just have to use shift R
+for the red channel,
+
+00:09:43.133 --> 00:09:45.466
+Shift G for the Green channel
+
+00:09:45.466 --> 00:09:48.066
+and shift B for the blue channel.
+
+00:09:48.133 --> 00:09:52.800
+So as you might have already expected
+from the plane, IGP view,
+
+00:09:52.866 --> 00:09:55.133
+the Blue channel is our best
+
+00:09:55.133 --> 00:09:57.833
+bet to get a proper matte extracted
+
+00:09:57.900 --> 00:10:00.433
+or the blue range of the image.
+
+00:10:00.666 --> 00:10:02.500
+So how do we deal with that?
+
+00:10:02.500 --> 00:10:05.100
+Well, making sure my,
+
+00:10:05.166 --> 00:10:07.200
+selective too is selected.
+
+00:10:07.200 --> 00:10:10.266
+I'm actually going to activate
+the diamond here.
+
+00:10:10.266 --> 00:10:13.000
+This little guy here
+that you already know
+
+00:10:13.100 --> 00:10:17.033
+from the color pop like so.
+
+00:10:17.100 --> 00:10:20.333
+So now I can go about this exactly
+the same way as I would
+
+00:10:20.333 --> 00:10:21.333
+in the color warper.
+
+00:10:21.333 --> 00:10:25.066
+I could select a preset like Cyan,
+
+00:10:25.166 --> 00:10:27.566
+but I don't see anything.
+
+00:10:27.566 --> 00:10:29.733
+how can I actually see my matte?
+
+00:10:29.733 --> 00:10:34.066
+Well, for that
+I have to hit F8 and see
+
+00:10:34.166 --> 00:10:37.166
+my selective matte view,
+
+00:10:37.233 --> 00:10:43.500
+and that can
+then be refined from here.
+
+00:10:43.566 --> 00:10:45.133
+What I can also do
+
+00:10:45.133 --> 00:10:49.000
+if I hit F8 twice
+is actually get an overlay
+
+00:10:49.100 --> 00:10:53.233
+of that matte onto my image,
+which might make things a little bit
+
+00:10:53.233 --> 00:10:54.500
+easier.
+
+00:10:54.500 --> 00:10:56.500
+So let's see if we can find that
+
+00:10:56.500 --> 00:11:01.000
+a little bit more.
+
+00:11:01.100 --> 00:11:04.866
+Could also
+try to pick our custom color.
+
+00:11:04.933 --> 00:11:06.533
+But I think
+
+00:11:06.533 --> 00:11:09.533
+the selection
+we had actually wasn't too bad.
+
+00:11:09.533 --> 00:11:13.033
+If we go back to F14
+
+00:11:13.133 --> 00:11:17.633
+and then F8 for the overlay,
+we catch quite a lot of that.
+
+00:11:17.700 --> 00:11:19.266
+There are two more things
+I want to do.
+
+00:11:19.266 --> 00:11:23.100
+I want to soften this up a little bit
+and then I want to constrain it
+
+00:11:23.166 --> 00:11:24.700
+by an additional T mask.
+
+00:11:24.700 --> 00:11:29.166
+So let's start by blurring this,
+
+00:11:29.233 --> 00:11:32.700
+something like that,
+and then I want to apply it.
+
+00:11:32.700 --> 00:11:34.233
+You must do this as well.
+
+00:11:34.233 --> 00:11:36.633
+So going back to my result view,
+
+00:11:36.900 --> 00:11:40.500
+I can either click in the image,
+I can also click on my heart
+
+00:11:40.500 --> 00:11:44.833
+here, right click and add a mask link
+
+00:11:44.933 --> 00:11:47.766
+with link, meaning that the t mask
+
+00:11:47.766 --> 00:11:51.766
+will automatically be linked to that.
+
+00:11:51.866 --> 00:11:55.800
+And I just picked
+so now I'm going to go with free
+
+00:11:55.800 --> 00:12:00.133
+instead of Ellipse
+and that allows me to draw a G mask
+
+00:12:00.133 --> 00:12:07.000
+like I would in the G mask tracer
+So I'm going to go with this now.
+
+00:12:07.066 --> 00:12:10.633
+Something like that, kill that,
+
+00:12:10.733 --> 00:12:14.833
+point up there, something like that.
+
+00:12:14.933 --> 00:12:17.966
+So let's get back to F eight
+to see if our Matt works
+
+00:12:17.966 --> 00:12:20.700
+and we'll see not what we expect.
+
+00:12:20.700 --> 00:12:24.300
+So if we sat through this,
+you see the flat image,
+
+00:12:24.366 --> 00:12:26.333
+but we don't see
+
+00:12:26.333 --> 00:12:28.833
+our overlay combined
+with our diamond keyer.
+
+00:12:28.833 --> 00:12:29.500
+Why is that?
+
+00:12:29.500 --> 00:12:34.266
+Well, if we head back to the result
+view and take a look at the HUD,
+
+00:12:34.333 --> 00:12:38.100
+you see that
+our correct selective is selected.
+
+00:12:38.100 --> 00:12:42.700
+That is the selective to Diamond,
+but also our G mask is selected.
+
+00:12:42.700 --> 00:12:47.133
+So we just got the view of the G mask
+and of itself in the viewer.
+
+00:12:47.200 --> 00:12:49.366
+If we want to see the result
+
+00:12:49.366 --> 00:12:53.033
+of the diamond keyer
+and the G mask to combined,
+
+00:12:53.100 --> 00:12:56.166
+we need to select
+the selective itself
+
+00:12:56.233 --> 00:12:59.800
+and then head over to the F8 view.
+
+00:12:59.900 --> 00:13:01.966
+And there we get what we expect.
+
+00:13:01.966 --> 00:13:04.633
+So now we can refine this a bit more.
+
+00:13:04.733 --> 00:13:07.566
+Let's bring this over here.
+
+00:13:07.633 --> 00:13:09.800
+Let's also add a gradient point
+
+00:13:09.800 --> 00:13:13.300
+to further this up,
+something like that.
+
+00:13:13.400 --> 00:13:16.066
+And then of course,
+if we shuttled through this clip,
+
+00:13:16.166 --> 00:13:18.700
+we see
+we need to animate that matter.
+
+00:13:18.700 --> 00:13:22.166
+We can do that manually
+or like with any other G mask
+
+00:13:22.166 --> 00:13:25.500
+in action or the G mass tracer,
+we can, of course, check that.
+
+00:13:25.500 --> 00:13:26.900
+So let's try that.
+
+00:13:26.900 --> 00:13:29.833
+And I'm
+actually choosing to track the axis
+
+00:13:29.833 --> 00:13:32.200
+so I could go to the schematic
+and choose it there.
+
+00:13:32.200 --> 00:13:35.433
+I can also pick the tab up here
+
+00:13:35.500 --> 00:13:38.100
+and select rotation and scale
+
+00:13:38.100 --> 00:13:41.866
+to have two points
+and enter the tracker.
+
+00:13:41.966 --> 00:13:43.800
+And then I'm just going to do
+
+00:13:43.800 --> 00:13:48.200
+a quick track on her eyes
+
+00:13:48.300 --> 00:13:50.266
+like, So
+
+00:13:50.266 --> 00:14:06.033
+let's see if that sticks.
+
+00:14:06.100 --> 00:14:08.133
+Something like that
+
+00:14:08.133 --> 00:14:11.466
+just hit the adjust offset
+to bring it back into place.
+
+00:14:11.466 --> 00:14:13.033
+And now
+
+00:14:13.033 --> 00:14:16.133
+yeah, we could probably smoothen
+
+00:14:16.133 --> 00:14:20.566
+out the scale and rotation
+in the channel.
+
+00:14:20.566 --> 00:14:23.266
+Editor Let's quickly do that.
+
+00:14:23.366 --> 00:14:25.766
+So going in over here,
+
+00:14:25.800 --> 00:14:30.133
+just selecting access
+to rotation and scaling,
+
+00:14:30.133 --> 00:14:34.600
+holding down shift to select
+both the rotation and the scaling,
+
+00:14:34.700 --> 00:14:37.833
+and then with average selected here,
+
+00:14:37.900 --> 00:14:43.200
+I'm going to smoothen those out.
+
+00:14:43.266 --> 00:14:46.800
+So as a constrain matte,
+that should work for grading.
+
+00:14:46.800 --> 00:14:49.133
+Okay, great.
+
+00:14:49.133 --> 00:14:50.433
+So with that
+
+00:14:50.433 --> 00:14:53.933
+we can finally get back to color
+correct this.
+
+00:14:53.933 --> 00:14:56.600
+So going to the result View
+
+00:14:56.700 --> 00:14:58.666
+Diamond two is selected.
+
+00:14:58.666 --> 00:15:01.000
+I'm going to go to Master grade two.
+
+00:15:01.000 --> 00:15:06.866
+It's really helpful that image names
+these all accordingly.
+
+00:15:06.866 --> 00:15:10.566
+So G Mask two, access
+to master grade to
+
+00:15:10.633 --> 00:15:13.000
+are all tied to selective two.
+
+00:15:13.000 --> 00:15:15.400
+So of course
+at one point that might break,
+
+00:15:15.400 --> 00:15:20.966
+but as much as possible
+image will try to keep those numbers
+
+00:15:21.033 --> 00:15:22.800
+sensible so
+
+00:15:22.800 --> 00:15:25.200
+to indicate which belongs to which.
+
+00:15:25.233 --> 00:15:29.966
+And once again, if you falter,
+if you're not sure which axis which
+
+00:15:30.000 --> 00:15:32.900
+you mask you are actually working
+
+00:15:33.000 --> 00:15:35.700
+on, always go back to the schematic.
+
+00:15:35.700 --> 00:15:38.566
+I think this is something
+that as a new artist
+
+00:15:38.666 --> 00:15:40.166
+you'll probably understand.
+
+00:15:40.166 --> 00:15:41.800
+And the easiest.
+
+00:15:41.800 --> 00:15:44.200
+All right, master grade to select it.
+
+00:15:44.266 --> 00:15:48.233
+And now we can adjust this skin tone.
+
+00:15:48.233 --> 00:15:52.066
+So maybe you will try to bring it
+a little bit
+
+00:15:52.066 --> 00:15:56.800
+more in on the lively side,
+something like that.
+
+00:15:56.866 --> 00:15:58.600
+Lets hide that for a minute.
+
+00:15:58.600 --> 00:16:05.266
+Yeah, I think this isn't too bad.
+
+00:16:05.366 --> 00:16:07.033
+So the
+last thing I want to show you in
+
+00:16:07.033 --> 00:16:11.500
+this class is how to properly label
+your individual selector.
+
+00:16:11.500 --> 00:16:12.600
+So that's pretty easy.
+
+00:16:12.600 --> 00:16:17.833
+Just by right clicking in here,
+we can rename this
+
+00:16:17.933 --> 00:16:20.166
+vignette
+
+00:16:20.166 --> 00:16:22.366
+like so.
+
+00:16:22.366 --> 00:16:24.633
+So now this is properly labeled
+
+00:16:24.633 --> 00:16:27.033
+and if we go to the second one,
+
+00:16:27.033 --> 00:16:30.066
+you could also use
+the object window down here.
+
+00:16:30.066 --> 00:16:33.900
+So if you don't want to call this
+diamond, which just refers to the key
+
+00:16:33.966 --> 00:16:36.600
+instead of the actual object
+in the image,
+
+00:16:36.666 --> 00:16:40.366
+you could call this face
+
+00:16:40.466 --> 00:16:42.066
+like so.
+
+00:16:42.066 --> 00:16:44.566
+Okay, so I'm going to close this
+
+00:16:44.566 --> 00:16:48.133
+class out now, and in the next class
+we're going to continue
+
+00:16:48.133 --> 00:16:51.400
+our exploration
+of the image tool, said.
+
+00:16:51.500 --> 00:16:54.766
+And then we'll also take a look
+at some other means
+
+00:16:54.766 --> 00:16:56.233
+on how to separate your image.
+
+00:16:56.233 --> 00:16:59.466
+So we'll take a look at the machine
+learning inside of Flame
+
+00:16:59.533 --> 00:17:03.800
+and also 3D areas,
+which could be pretty exciting.
+
+00:17:03.900 --> 00:17:05.833
+So thank you so much for watching.
+
+00:17:05.833 --> 00:17:07.433
+Until next time. Bye bye.
+

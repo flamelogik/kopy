@@ -1,0 +1,20 @@
+# --------------------------------------------------------------------------- #
+
+put your VTT files in the directory 'vtt_files'.
+
+# --------------------------------------------------------------------------- #
+
+modify these lines in 'logik-kopy_pro.py'
+
+from:
+
+    vtt_directory = os.path.join(parent_directory, 'example')
+    # vtt_directory = os.path.join(parent_directory, 'vtt_files')
+
+to:
+
+    # vtt_directory = os.path.join(parent_directory, 'example')
+    vtt_directory = os.path.join(parent_directory, 'vtt_files')
+
+then save.
+# --------------------------------------------------------------------------- #
